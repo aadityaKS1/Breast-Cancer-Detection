@@ -38,21 +38,24 @@ This project is a **Breast Cancer Prediction Web Application** that predicts whe
 
 ## Project Folder Structure
 
-```project/
+```
+breast_cancer_app/
 │
-├── backend/ # Backend folder (FastAPI + ML model)
-│ ├── main.py # FastAPI application
-│ ├── model.pkl # Saved Random Forest model
-│ └── schemas.py # Pydantic models for input validation
+├─ backend/
+│   ├─ main.py                     # FastAPI app
+│   ├─ requirements.txt            # Backend dependencies
+│   ├─ random_forest_model.pkl     # Trained RF model
+│   └─ README.md                   # Backend instructions
 │
-├── frontend/ # Optional frontend (React / HTML)
-│ ├── src/ # React source code
-│ │ └── App.js
-│ └── public/ # Public assets (index.html, images)
+├─ frontend/                       # React app
+│   ├─ public/
+│   ├─ src/
+│   ├─ package.json
+│   └─ README.md
 │
-├── images/ # Screenshots for README
-│ ├── input_form.png
-│ └── result.png
+├─ notebooks/                      # Optional, for exploration & training
+│   └─ main.ipynb
 │
-└── README.md # Project documentation
+└─ README.md                       # Project overview
+
 ```
