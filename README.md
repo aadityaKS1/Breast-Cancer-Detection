@@ -1,8 +1,8 @@
 # 🩺 Breast Cancer Prediction Web Application (FastAPI + Random Forest)
 
-This project is a **Breast Cancer Prediction Web Application** using:
+This project is a **Breast Cancer Prediction Web Application** built using:
 
-- **FastAPI** for backend
+- **FastAPI** for backend API development
 - **Python / scikit-learn** for Machine Learning
 - **Random Forest Classifier** for tumor prediction
 
@@ -14,19 +14,18 @@ The application allows users to input medical features of a patient and receive 
 
 project/
 │
-├── backend/
+├── backend/ # Backend folder (FastAPI + ML model)
 │ ├── main.py # FastAPI application
-│ ├── model.pkl # Trained Random Forest model
-│ └── schemas.py # Pydantic models for input
+│ ├── model.pkl # Saved Random Forest model
+│ └── schemas.py # Pydantic models for input validation
 │
-├── frontend/ # Optional React frontend
-│ ├── src/
-│ └── public/
+├── frontend/ # Optional frontend (React / HTML)
+│ ├── src/ # React source code
+│ │ └── App.js
+│ └── public/ # Public assets (index.html, images)
 │
-└── README.md
+└── README.md # Project documentation
 
-yaml
-Copy code
 
 ---
 
@@ -37,18 +36,24 @@ Copy code
 - Input validation using **Pydantic**
 - Returns **Benign / Malignant** prediction
 - CORS enabled for frontend integration
+- Easy to extend with additional medical features
 
 ### Machine Learning
 - Random Forest Classifier trained on **Breast Cancer Wisconsin Dataset**
-- Fast and reliable predictions
+- High accuracy (~95–97%)
 - Model saved as `model.pkl` for deployment
+
+### Frontend (Optional)
+- React-based form to input patient features
+- Display prediction result clearly
+- Optionally show input summary and statistics
 
 ---
 
 ## 💻 Installation
 
 ### 1. Setup Backend
-bash
+``bash
 cd backend
 python -m venv venv
 # Activate virtual environment
@@ -56,34 +61,14 @@ python -m venv venv
 venv\Scripts\activate
 # Linux / Mac:
 source venv/bin/activate
-2. Install dependencies
-bash
-Copy code
-pip install fastapi uvicorn scikit-learn pandas
-3. Run FastAPI server
-bash
-Copy code
-uvicorn main:app --reload
-The API will run at: http://127.0.0.1:8000
+### 2\. Install dependencies
 
-🔗 API Endpoint
-POST /predict
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install fastapi uvicorn scikit-learn pandas   `
 
-Request Body Example:
+### 3\. Run FastAPI server
 
-json
-Copy code
-{
-  "radius_mean": 17.99,
-  "texture_mean": 10.38,
-  "perimeter_mean": 122.8,
-  "area_mean": 1001,
-  "smoothness_mean": 0.118
-}
-Response Example:
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   uvicorn main:app --reload   `
 
-json
-Copy code
-{
-  "prediction": "Benign"
-}
+*   API runs at: http://127.0.0.1:8000
+    
+*   Interactive API docs: http://127.0.0.1:8000/docs
