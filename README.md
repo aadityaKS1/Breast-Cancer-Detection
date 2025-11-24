@@ -1,7 +1,7 @@
 # 🩺 Breast Cancer Prediction Web Application
 **Breast Cancer Prediction Using Machine Learning (Random Forest + FastAPI)**
 
-![Breast Cancer](https://cdn-images-1.medium.com/max/2600/1*gNcFEL1cpGpDC4vo1zUAWA.png)
+![Breast Cancer](https://imgur.com/a/Ie7A0kc)
 
 ---
 
