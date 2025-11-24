@@ -63,7 +63,7 @@ breast_cancer_app/
 ## 💻 Installation
 
 ### 1️⃣ Clone Repo
-```bash
+```
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
  ```
@@ -74,9 +74,12 @@ python -m venv venv
 # Activate venv
 # Windows: venv\Scripts\activate
 # Linux/Mac: source venv/bin/activate
-pip install fastapi uvicorn scikit-learn pandas numpy pydantic python-multipart
+```
+```
+pip install -r requirements.txt
 uvicorn main:app --reload
-
+```
+```
 
 API: http://127.0.0.1:8000
 
