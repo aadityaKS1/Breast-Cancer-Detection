@@ -59,3 +59,34 @@ breast_cancer_app/
 └─ README.md                       # Project overview
 
 ```
+
+## 💻 Installation
+
+### 1️⃣ Clone Repo
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+ ```
+```
+2️⃣ Backend Setup
+cd backend
+python -m venv venv
+# Activate venv
+# Windows: venv\Scripts\activate
+# Linux/Mac: source venv/bin/activate
+pip install fastapi uvicorn scikit-learn pandas numpy pydantic python-multipart
+uvicorn main:app --reload
+
+
+API: http://127.0.0.1:8000
+
+Docs: http://127.0.0.1:8000/docs
+
+3️⃣ Frontend Setup (Optional)
+cd frontend
+npm install
+npm start
+
+
+Runs at http://localhost:3000
+```
