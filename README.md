@@ -2,6 +2,7 @@
 **Breast Cancer Prediction Using Machine Learning (Random Forest + FastAPI)**
 
 ![Breast Cancer](https://i.postimg.cc/q7cCrvng/Screenshot-2025-11-24-224732.png)
+![Breast Cancer_result](https://i.postimg.cc/q7cCrvng/Screenshot-2025-11-24-224732.png)
 
 ---
 
