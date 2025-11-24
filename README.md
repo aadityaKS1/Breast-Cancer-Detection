@@ -12,22 +12,20 @@ The application allows users to input medical features of a patient and receive 
 
 ## 📁 Project Structure
 
+``bash
 project/
 │
-├── backend/ # Backend folder (FastAPI + ML model)
-│ ├── main.py # FastAPI application
-│ ├── model.pkl # Saved Random Forest model
-│ └── schemas.py # Pydantic models for input validation
+├── backend/                # Backend folder (FastAPI + ML model)
+│   ├── main.py             # FastAPI application
+│   ├── model.pkl           # Saved Random Forest model
+│   └── schemas.py          # Pydantic models for input validation
 │
-├── frontend/ # Optional frontend (React / HTML)
-│ ├── src/ # React source code
-│ │ └── App.js
-│ └── public/ # Public assets (index.html, images)
+├── frontend/               # Optional frontend (React / HTML)
+│   ├── src/                # React source code
+│   │   └── App.js
+│   └── public/             # Public assets (index.html, images)
 │
-└── README.md # Project documentation
-
-
----
+└── README.md               # Project documentation
 
 ## 🚀 Features
 
