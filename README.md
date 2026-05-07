@@ -45,12 +45,13 @@ Benign / Malignant Prediction + Confidence Score
 ---
 
 ## Project Structure
+```
 Breast-Cancer-Detection/
 │
 ├── notebook/        # Model training, EDA, feature engineering
 ├── backend/         # FastAPI backend - model inference and API
 ├── frontend/        # React frontend - user interface
-
+```
 ---
 
 ## Tech Stack
