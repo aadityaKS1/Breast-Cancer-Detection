@@ -22,6 +22,7 @@ Random Forest classifier trained on the Wisconsin Breast Cancer Dataset.
 Features include radius, texture, perimeter, area, and smoothness of
 cell nuclei. The model predicts benign or malignant with real-time
 results through a web interface.
+```
 Patient Data Input
 ↓
 Feature Preprocessing + Scaling
@@ -29,7 +30,7 @@ Feature Preprocessing + Scaling
 Random Forest Classifier
 ↓
 Benign / Malignant Prediction + Confidence Score
-
+```
 ---
 
 ## Results
